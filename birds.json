@@ -2,23 +2,23 @@
 
 {
     "birds": [{
-        "name": "red breasted merganser", 
-        "order": "Anseriformes", 
+        "name": "red breasted merganser",
+        "order": "Anseriformes",
         "status": "least concern"
     },
     {
-        "name": "cedar waxwing", 
-        "order": "Passeriformes", 
+        "name": "cedar waxwing",
+        "order": "Passeriformes",
         "status": "least concern"
     },
     {
-        "name": "osprey", 
+        "name": "osprey",
         "order": "Accipitriformes",
         "status": "least concern"
     }
     {
-        "name": "snowy plover", 
-        "order": "Charadriformes", 
+        "name": "snowy plover",
+        "order": "Charadriformes",
         "status": "least concern"
     },
     {
@@ -28,7 +28,7 @@
     },
     {
         "name": "greater sage grouse",
-        "order": "GALLIFORMES", 
+        "order": "Galliformes", 
         "status": "near threatened"
     }]
 }
