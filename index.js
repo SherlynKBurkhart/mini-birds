@@ -20,11 +20,7 @@ app.post('/api/sightings', function(req, res){
 })
 
 app.get('/api/sightings',function(req, res){
-  var query = {};
-  for(var key in req.query){
-    query[key] = req.query[key];
-  };
-  db.sightings.find(query, function(err, response){
+  db.sightings.find(req.query, function(err, response){
     if(err){
       res.status(500).json(err);
     } else {
