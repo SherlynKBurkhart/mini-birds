@@ -20,6 +20,11 @@ app.post('/api/sightings', function(req, res){
 })
 
 app.get('/api/sightings',function(req, res){
+  // To query by mongo ids, the id needs to be converted from a string to a mongo id.
+  // That's what line 26 is doing.
+  if(req.query._id){
+    req.query._id = mongojs.ObjectId(req.query._id);
+  }
   db.sightings.find(req.query, function(err, response){
     if(err){
       res.status(500).json(err);
